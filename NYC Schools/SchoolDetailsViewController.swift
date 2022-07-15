@@ -49,6 +49,12 @@ class SchoolDetailsViewController: UIViewController {
                             self.readingScore.text = testdbn["sat_critical_reading_avg_score"].stringValue
                             self.mathScore.text = testdbn["sat_math_avg_score"].stringValue
                         }
+                        //if the school is not found, display data not found
+                        else {
+                            self.writingScore.text = "Data not found"
+                            self.readingScore.text = "Data not found"
+                            self.mathScore.text = "Data not found"
+                        }
                     }
                 }
 
